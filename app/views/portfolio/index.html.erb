@@ -27,7 +27,7 @@
             </div>
           <div class="recently-image">
             <% if work.avater.attached? %>
-            <%=link_to image_tag( work.avater.variant(combine_options:{resize:"300x60^",crop:"300x60+0+0",gravity: :center}).processed) %>
+            <%=link_to image_tag( work.avater.variant(combine_options:{resize:"300x60^",crop:"300x60+0+0",gravity: :center}).processed), "/portfolio/#{work.id}", method: :get %>
             <% end %>
           </div>
         </div>
@@ -43,7 +43,7 @@
           </div>
             <div class="work2-image">
               <% if op.avater.attached? %>
-              <%=link_to image_tag( op.avater.variant(combine_options:{resize:"135x60^",crop:"135x60+0+0",gravity: :center}).processed) %>
+              <%=link_to image_tag( op.avater.variant(combine_options:{resize:"135x60^",crop:"135x60+0+0",gravity: :center}).processed), "/portfolio/#{op.id}", method: :get %>
               <% end %>
             </div>
         </div>
@@ -59,7 +59,7 @@
           </div>
             <div class="work2-image">
               <% if kuma.avater.attached? %>
-              <%= link_to image_tag( kuma.avater.variant(combine_options:{resize:"135x60^",crop:"135x60+0+0",gravity: :center}).processed) %>
+              <%= link_to image_tag( kuma.avater.variant(combine_options:{resize:"135x60^",crop:"135x60+0+0",gravity: :center}).processed),"/portfolio/#{kuma.id}", method: :get %>
               <% end %>
             </div>
         </div>
@@ -75,7 +75,7 @@
           </div>
             <div class="work2-image">
               <% if nobody.avater.attached? %>
-              <%= link_to image_tag( nobody.avater.variant(combine_options:{resize:"135x60^",crop:"135x60+0+0",gravity: :center}).processed) %>
+              <%= link_to image_tag( nobody.avater.variant(combine_options:{resize:"135x60^",crop:"135x60+0+0",gravity: :center}).processed), "/portfolio/#{nobody.id}", method: :get %>
               <% end %>
             </div>
         </div>
@@ -91,7 +91,7 @@
           </div>
             <div class="work2-image">
               <% if other.avater.attached? %>
-              <%= link_to image_tag( other.avater.variant(combine_options:{resize:"135x60^",crop:"135x60+0+0",gravity: :center}).processed) %>
+              <%= link_to image_tag( other.avater.variant(combine_options:{resize:"135x60^",crop:"135x60+0+0",gravity: :center}).processed),"/portfolio/#{other.id}", method: :get %>
               <% end %>
             </div>
         </div>
