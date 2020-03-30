@@ -1,0 +1,2 @@
+class Kuma < ApplicationRecord
+end

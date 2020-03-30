@@ -1,0 +1,2 @@
+class Nobody < ApplicationRecord
+end

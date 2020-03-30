@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kukita Akane's portfolio</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <!--<link rel="stylesheet" href="../assets/stylesheets/porfolio.css" type="text/css">-->
+    <!--<link rel="stylesheet" href="../assets/stylesheets/lightbox.min.css" type="text/css">-->
+    <!--<link rel="stylesheet" href="../assets/stylesheets/lightbox.css" type="text/css">-->
+    
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="/portfolio/">
+        <div class="title">
+          <%= image_tag 'HPロゴ.png' %>
+        </div>
+      </a>
+        <nav class="menu">
+          <div class="menu_item">INFO</div>
+          <div class="menu_item">WORKS</div>
+          <div class="menu_item">BIO</div>
+          <div class="menu_item">CONTACT</div>
+        </nav>
+    </header>
+      <%= yield %>
+    <!--<footer class="footer">-->
+    <!--  Copyright 2020 Kukita Akane-->
+    <!--</footer>-->
+    
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+<!--<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>-->
+<!--<script src="../assets/javascripts/lightbox.min.js"></script>-->
+<!--<script src="../assets/javascripts/ofi.min.js"></script>-->
+
+  </body>
+</html>

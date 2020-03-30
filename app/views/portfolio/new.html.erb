@@ -1,0 +1,18 @@
+<main class="contents">
+
+<p class="midashi2">作品の投稿</p>
+  <p class="line2"></p>
+<br>
+  <%= form_for @works do |f| %>
+<p class="midashi2"><%= f.label 'タイトル（年代）' %></p>
+  <%= f.text_area :title %>
+<p class="midashi2"><%= f.label '詳細（素材、サイズ、展示場所）' %></p>
+  <%= f.text_area :detail %>
+<p class="midashi2"><%= f.label 'ジャンル' %></p>
+  <%= f.text_area :genre %>
+<p class="midashi2"><%= f.label '画像' %></p>
+    <%= f.file_field :images, multiple: true %>
+<p class="midashi2"><%= f.label 'サムネイル画像' %></p>
+    <%= f.file_field :avater %>
+<%= f.submit 'アップロード' %>
+  <% end %>

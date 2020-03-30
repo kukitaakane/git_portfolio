@@ -1,0 +1,159 @@
+<main class="contents">
+  <p class="line"></p>
+  <p class="midashi">INFO</p>
+  <p class="line2"></p>
+  <section class="infomation">
+    <div class="info-article">
+・2020.4.4~6<br>
+　　西国分寺の公園で「一葉一環」を展示します。<br>
+・2020.3.30<br>
+　　HPをリニューアルしました<br>
+    </div>
+    <div class="main-vidu">
+      <%= image_tag 'webtop1.jpg', :size => '350x250' %>
+    </div>
+  </section>
+  
+  <p class="midashi">WORKS</p>
+  <p class="line2"></p>
+
+  <section class="works">
+    <p class="midashi2"> Recently</p>
+    <div class="recently">
+      <% @works.each do |work| %>
+        <div class="recently-item">
+          <div class="recently-title">
+            <p><%= link_to work.title, "/portfolio/#{work.id}", method: :get %></p>
+            </div>
+          <div class="recently-image">
+            <% if work.avater.attached? %>
+            <%=link_to image_tag( work.avater.variant(combine_options:{resize:"300x60^",crop:"300x60+0+0",gravity: :center}).processed) %>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+
+    <p class="midashi2">Ornament Plants</p>
+    <div class="work2">
+      <% @ops.each do |op| %>
+        <div class="work2-item">
+          <div class="work2-title">
+            <p><%= link_to op.title, "/portfolio/#{op.id}", method: :get %></p>
+          </div>
+            <div class="work2-image">
+              <% if op.avater.attached? %>
+              <%=link_to image_tag( op.avater.variant(combine_options:{resize:"135x60^",crop:"135x60+0+0",gravity: :center}).processed) %>
+              <% end %>
+            </div>
+        </div>
+      <% end %>
+    </div>
+    
+    <p class="midashi2">木彫りの熊　Works</p>
+    <div class="work2">
+      <% @kumas.each do |kuma| %>
+        <div class="work2-item">
+          <div class="work2-title">
+            <p><%= link_to kuma.title, "/portfolio/#{kuma.id}", method: :get %></p>
+          </div>
+            <div class="work2-image">
+              <% if kuma.avater.attached? %>
+              <%= link_to image_tag( kuma.avater.variant(combine_options:{resize:"135x60^",crop:"135x60+0+0",gravity: :center}).processed) %>
+              <% end %>
+            </div>
+        </div>
+      <% end %>
+    </div>
+    
+    <p class="midashi2">Nobody</p>
+    <div class="work2">
+      <% @nobodies.each do |nobody| %>
+        <div class="work2-item">
+          <div class="work2-title">
+            <p><%= link_to nobody.title, "/portfolio/#{nobody.id}", method: :get %></p>
+          </div>
+            <div class="work2-image">
+              <% if nobody.avater.attached? %>
+              <%= link_to image_tag( nobody.avater.variant(combine_options:{resize:"135x60^",crop:"135x60+0+0",gravity: :center}).processed) %>
+              <% end %>
+            </div>
+        </div>
+      <% end %>
+    </div>
+    
+    <p class="midashi2">Others</p>
+    <div class="work2">
+      <% @others.each do |other| %>
+        <div class="work2-item">
+          <div class="work2-title">
+            <p><%= link_to other.title, "/portfolio/#{other.id}", method: :get %></p>
+          </div>
+            <div class="work2-image">
+              <% if other.avater.attached? %>
+              <%= link_to image_tag( other.avater.variant(combine_options:{resize:"135x60^",crop:"135x60+0+0",gravity: :center}).processed) %>
+              <% end %>
+            </div>
+        </div>
+      <% end %>
+    </div>
+  </seciton>
+  
+  <p class="midashi">BIO</p>
+  <p class="line2"></p>
+  
+  <section class="bio">
+    <p class="midashi2">久木田茜</p>
+    <p class="bio1">
+1987年生まれ　愛知育ち<br><br>
+2010　名古屋芸術大学美術学部造形科陶芸コース 卒業<br>
+2010　多摩美術大学美術学部工芸科陶プログララム  研究生<br>
+2013　多摩美術大学大学院美術研究科 博士前期課程(修士)工芸領域専攻 陶領域 修了<br>
+2019　東京芸術大学大学院美術研究科　博士前期課程（修士）先端芸術表現専攻　修了<br>
+2020　東京芸術大学大学院美術研究科　博士後期課程（博士）先端芸術表現専攻　在籍<br>
+    </p>
+
+    <p class="midashi2">個展</p>
+    <p class="bio1">
+2017　久木田茜個展　一葉一環(ARTTRACE Gallery/両国)<br>
+2015　久木田茜個展　ものの花弁(ARTTRACE Gallery/両国)<br>
+2013　久木田茜個展 – つくえのした -(ASK?P / 京橋)<br>
+    </p>
+
+    <p class="midashi2">グループ展　公募展入選展</p>
+
+    <p class="bio1">
+2019　トロールの森　(杉並区/善福寺公園)<br>
+2018　アートきたまちフェス　ASK祭vol.4(さいたま市/ハウジングセンター)<br>
+2017　小須戸ARTプロジェクト（新潟秋葉区小須戸町各所）<br>
+2016　徳永雅之×久木田茜「広がる光・育ってゆく断片」（ぎゃらりー由芽のつづき/三鷹)<br>
+2015　Refrection あんど　もあ(ARTTRACEgallery/両国）<br>
+　　　第5回 公募 新鋭作家展（二次審査作品公開）<br>
+　　　（川口市立アートギャラリー•アトリア/川口市）<br>
+2014　大草原立体展（gallery KINGYO）<br>
+　　　トーキョーワンダーウォール2014　入選展（東京都現代美術館/清澄白川）<br>
+2013　Derby 展 (gallery KINGYO)<br>
+　　　中之条ビエンナーレ 2013(中之条 伊参スタジオ / 群馬)<br>
+2012　史水展(銀座アートホール)<br>
+　　　アジア現代陶芸展(鳳歌陶磁博物館 / 中国台湾)<br>
+2011　アジア現代陶芸展(広州美術大学美術館 / 中国 広州)<br>
+2010　名古屋芸術大学卒業制作展(名古屋芸術大学学内 / 愛知)<br>
+　　　アジア現代陶芸展(弘益大学現代美術館 / 韓国 ソウル)<br>
+　　　史水展(精華画廊+KEY Gallery/ 東京 )<br>
+2009　常滑フィールド•トリップ 2009(旧常滑市役所 / 愛知)<br>
+　<br>
+　<br>
+    </p>
+  </section>
+  
+  <p class="midashi">CONTACT</p>
+  <p class="line2"></p>
+  
+  <section class="contact">
+    <p class="midashi2">akanekukita@gmail.com</p>
+    <br>
+    <br>
+  </section>
+  
+  <p class="line"></p>
+</main>

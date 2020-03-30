@@ -1,0 +1,296 @@
+// Place all the styles related to the portfolio controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+// Place all the styles related to the works controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+// apllocation.html
+
+// @font-face{
+// font-family: "Kokoro", 'HanziPen TC','ＭＳ 明朝', 'MS Mincho',sans-serif;
+//   // font-family: "Hannari" 'TA_yoshienoryokan_penb' "YuMincho", "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;;
+//   // src: url('TA_yoshienoryokan_penb.ttf') format('truetype');
+//}
+
+body {
+    background-color:#FFF;
+    font-family: 'HanziPen TC';
+}
+
+a{/*リンクされた文字*/
+    color: #666666;
+    font-style: normal;
+    text-decoration: none;
+    font-family: 'HanziPen TC'
+}
+
+a:hover {/*マウスをのせたとき*/
+    color:#888888;
+    font-style:normal;
+    text-decoration: none;
+    font-family: 'HanziPen TC'
+}
+
+a:active {/*クリック中*/
+    text-decoration:none;
+}
+
+.title {
+  font-family: 'ＭＳ 明朝';
+  height: 60px;
+  width: 350px;
+  background: #fff;
+  padding: 10px;
+  display: flex;
+  color: #666666;
+  font-size: 2.5rem;
+}
+
+.title2 {
+  font-family: "HanziPen SC";
+  height: 50px;
+  width: 200px;
+  background: #fff;
+  padding: 20px 10px 0px;
+  display: flex;
+  color: #666666;
+  font-size: 2rem;
+  display: flex;
+}
+
+.header {
+  height: 80px;
+  background-color: #fff;
+  padding: 20px 100px 5px 50px;
+  display: flex;
+  margin: 0px 100px;
+}
+
+.menu{
+  height: 60px;
+  width: calc(100vw - 600px);
+  background: #fff;
+  padding: 10px 10px 10px 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu_item{
+  font-family: 'HanziPen SC';
+  background: #e6f0f0;
+  color: #888888;
+  padding: 10px;
+  width: 70px;
+  margin: 10px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.footer{
+  height: 20px;
+  background-color: #fff;
+  font-size: 0.5rem;
+  text-align: center;
+  color: #7acbe1;
+  margin: 0px 100px;
+}
+
+//index.html用
+
+.contents {
+  height: calc(100vh - 100px);
+  background-color: #fff;
+  margin: 0px 100px;
+}
+
+p.line{
+  border-bottom: 3px solid #7affbc;
+  margin: 3px;
+}
+
+p.line2{
+  border-bottom: 1px solid #7affbc;
+  margin: 3px;
+}
+
+p.midashi{
+  font-family: 'HanziPen SC';
+  font-size: 1.2rem;
+  color: #888888;
+  padding: 20px 60px 0px;
+  font-weight: 200;
+  margin: 1px;
+  vertical-align: text-bottom; 
+}
+
+.infomation{
+  height: 290px;
+  background-color: #fff;
+  display: flex;
+}
+
+.main-vidu{
+  width: 350px;
+  height: 250px;
+  margin: 40px 10px 10px 130px;
+  // padding: 10px 10px;
+  background-color: #968d00;
+}
+
+.info-article{
+  height: 250px;
+  margin: 50px 0px 10px 60px;
+  padding: 10px 10px;
+  background-color: #fff;
+  font-family: 'HanziPen SC';
+  font-size: 0.8rem;
+  color: #999999;
+  font-weight: 200;
+  vertical-align: text-bottom; 
+}
+
+p.midashi2{
+  font-family: 'HanziPen SC';
+  font-size: 1rem;
+  color: #999999;
+  padding: 20px 60px 0px;
+  font-weight: 200;
+  margin: 1px;
+}
+
+//works コンテンツ
+
+.works{
+  padding: 5px;
+  display: column;
+}
+
+.recently{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin-bottom: 10px;
+  padding: 0px 60px 0px;
+}
+
+.recently-item{
+  width: 300px;
+  height: 80px;
+  background: #fff;
+  display: column;
+  margin: 10px;
+}
+
+.recently-image{
+  width: 270px;
+  height: 60px;
+  background: #0bd;
+  margin: 10px;
+  object-fit: contain;
+  font-family: 'object-fit: contain;'
+}
+
+.recently-title{
+  width: 280px;
+  height: 15px;
+  background: #fff;
+  color: #7acbe1;
+  font-size: 0.8rem;
+  margin: 5px;
+  border-bottom: 1px solid #7acbe1;
+}
+
+// .OP
+
+.work2{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin-bottom: 10px;
+  padding: 0px 60px 0px;
+}
+
+.work2-item{
+  width: 150px;
+  height: 100px;
+  background: #fff;
+  display: column;
+  margin: 20px;
+}
+
+.work2-image{
+  width: 135px;
+  height: 60px;
+  background: #0bd;
+  margin: 20px 10px 10px 10px;
+}
+
+.work2-title{
+  width: 140px;
+  height: 15px;
+  background: #fff;
+  color: #7acbe1;
+  font-size: 0.7rem;
+  margin: 5px;
+  border-bottom: 1px solid #7acbe1;
+}
+
+//BIO
+
+.bio{
+  font-family: 'Yu Gothic';
+  font-size: 0.7rem;
+}
+
+p.bio1{
+  font-family: 'Yu Gothic';
+  font-size: 0.7rem;
+  color: #999999;
+  padding: 20px 60px 0px;
+  margin: 1px;
+}
+
+//contact
+
+.contact{
+}
+
+//new
+
+form {
+  input,textarea {
+    width: 80%;
+    border: 1px solid #gray;
+    border-radius: 5px;
+    font-family: "游ゴシック", "YuGothic";
+    margin: 10px;
+  }
+  
+  input[type="submit"] {
+    width: 50%;
+    border-radius: 20px;
+    color: #666666;
+    border: 1px solid #gray;
+    font-size: 18px;
+    margin: 30px;
+  }
+}
+
+    //showページ
+
+    .show{
+    width: 800px;
+    height: 600px;
+    margin: 50px auto;
+}
+
+.show_img {
+    width: 800px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+    show_contens{
+      
+    }
