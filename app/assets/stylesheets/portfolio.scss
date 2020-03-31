@@ -100,7 +100,7 @@ a:active {/*クリック中*/
 //index.html用
 
 .contents {
-  height: calc(100vh - 100px);
+  height: calc(100% - 100px);
   background-color: #fff;
   margin: 0px 100px;
 }
@@ -282,6 +282,9 @@ form {
     width: 800px;
     height: 600px;
     margin: 50px auto;
+    font-family: 'HanziPen SC';
+    font-size: 0.7rem;
+    color: #999999;
 }
 
 .show_img {
@@ -292,5 +295,10 @@ form {
 }
 
     show_contens{
-      
+    width: 500px;
+    height: 600px;
+    margin: 50px 50px 30px 50px ;
+    font-family: 'HanziPen SC';
+    font-size: 0.7rem;
+    color: #999999;
     }
