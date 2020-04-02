@@ -1,6 +1,7 @@
-require "csv"
-
-products_csv = CSV.readlines("db/works.csv")
-products_csv.each do |row|
-  Work.create(title: row[1], detail: row[2], genre: row[3], created_at: row[4], updated_at: row[5])
-end
+# This file should contain all the record creation needed to seed the database with its default values.
+# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
+#
+# Examples:
+#
+#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
+#   Character.create(name: 'Luke', movie: movies.first)
