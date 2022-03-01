@@ -68,7 +68,7 @@ gem 'hirb'
 gem 'hirb-unicode'
 gem 'mini_magick'
 gem 'jquery-rails' 
-gem 'image_processing', '~> 1.2'
+gem 'image_processing', '~> 1.12'
 gem "aws-sdk-s3", require: false
 
 group :production do
